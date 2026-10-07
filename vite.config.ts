@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import viteReact from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: "/yassine-ferhi.github.io/",
   plugins: [
     tsConfigPaths(),
     tanstackStart({
@@ -14,7 +15,7 @@ export default defineConfig({
       prerender: {
         enabled: true,
         autoSubfolderIndex: true,
-        crawlLinks: true,
+        crawlLinks: false,
       },
     }),
     viteReact(),
